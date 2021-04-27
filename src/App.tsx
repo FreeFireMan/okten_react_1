@@ -1,10 +1,22 @@
 import React from 'react';
 import './App.css';
 import ArticleComponent from "./components/article/articleComponent";
+import './components/article/articleComponent.css'
+import HeaderComponent from "./components/headerComponent/headerComponent";
+import TitleBoxComponent from "./components/TitelBoxComponent/TitleBoxComponent";
+import FoterComponent from "./components/foterComponent/FoterComponent";
 
 function App() {
     return (
         <div>
+            <HeaderComponent
+                title={'Сер Ві́нстон Леонард Спенсер-Че́рчилль'}
+                content={'"Розумна людина не робить сама всі помилки – вона дає шанс й іншим."'}
+            />
+            <TitleBoxComponent
+                h1={'Мудрі й проникливі цитати сера Вінстона Черчілля'}
+                signature={'signature'}
+            />
             <div className={'content-block'}>
                 <div className={'container'}>
                     <div className={'content-block__items'}>
@@ -29,6 +41,10 @@ function App() {
                     </div>
                 </div>
             </div>
+            <FoterComponent
+                create={' Creat Petriv Yaroslav'}
+                year = {'2021'}
+            />
         </div>
     );
 }
